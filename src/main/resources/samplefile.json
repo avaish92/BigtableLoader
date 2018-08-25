@@ -1,0 +1,225 @@
+{
+  "tables": [
+    {
+      "table_name": "recommendations_trending",
+      "column_families": [
+        {
+          "family_name": "rec",
+          "columns": [
+            {
+              "column_name": "141",
+              "description": "Trending Sesonal top K trending",
+              "data_path": "/staged/seasonal_trending/view_trendingProductsOutput/0/consolidated_ede"
+            },
+            {
+              "column_name": "154",
+              "description": "Trending Popular top K trending",
+              "data_path": "/staged/trending/popular_trending/popularRecommendationPorcessed/0/consolidated_ede"
+            },
+            {
+              "column_name": "114",
+              "description": "Trending Best Seller (_sum)",
+              "data_path": "/staged/trending/sum_trendingProductsOutput/0/consolidated_ede"
+            },
+            {
+              "column_name": "165",
+              "description": "Trending Best Seller (_deals) - Each Attribute",
+              "data_path": "/staged/trending/deals_trendingProductsFromEachAttributeOutputSum/0/consolidated_ede"
+            },
+            {
+              "column_name": "117",
+              "description": "Trending Best Seller (_sum) - Each Attribute",
+              "data_path": "/staged/trending/sum_trendingProductsFromEachAttributeOutput/0/consolidated_ede"
+            },
+            {
+              "column_name": "115",
+              "description": "Trending Best Seller (_sum) - Each Category",
+              "data_path": "/staged/trending/sum_trendingProductsFromEachCategoryOutput/0/consolidated_ede"
+            },
+            {
+              "column_name": "100",
+              "description": "TT new top k trending",
+              "data_path": "/staged/trending/trendingProductsOutput/0/consolidated_ede"
+            },
+            {
+              "column_name": "103",
+              "description": "TT new top k trending - Each Attribute",
+              "data_path": "/staged/trending/trendingProductsFromEachAttributeOutput/0/consolidated_ede"
+            },
+            {
+              "column_name": "164",
+              "description": "Trending top k trending (_deals) - Each Attribute",
+              "data_path": "/staged/trending/deals_topTrendingProductsFromEachAttributeOutput/0/consolidated_ede"
+            },
+            {
+              "column_name": "101",
+              "description": "TT new top k trending - Each Category",
+              "data_path": "/staged/trending/trendingProductsFromEachCategoryOutput/0/consolidated_ede"
+            },
+            {
+              "column_name": "171",
+              "description": "Trending top k trending - By Category",
+              "data_path": "/staged/trending/trendingProductsByTopCategoryOutput/0/consolidated_ede"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "table_name": "recommendations_propensity",
+      "column_families": [
+        {
+          "family_name": "rec",
+          "columns": [
+            {
+              "column_name": "173",
+              "description": "FL_propensities",
+              "data_path": "/staged/customer/FL_propensities"
+            },
+            {
+              "column_name": "174",
+              "description": "search_personal_affinity",
+              "data_path": "/staged/customer/search_personal_affinity/0/byAtg/"
+            },
+            {
+              "column_name": "175",
+              "description": "search_personal_affinity_v2",
+              "data_path": "/staged/customer/search_personal_affinity_v2/0/byAtg/"
+            },
+            {
+              "column_name": "176",
+              "description": "search_personal_affinity_v5",
+              "data_path": "/staged/customer/search_personal_affinity_v5/0/byAtg/"
+            },
+            {
+              "column_name": "192",
+              "description": "anony_search_personal_affinity_v2",
+              "data_path": "/staged/customer/anony_search_personal_affinity_v2/0/byAtg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "table_name": "recommendations_customer",
+      "column_families": [
+        {
+          "family_name": "rec",
+          "columns": [
+            {
+              "column_name": "135",
+              "description": "Collaborative",
+              "data_path": "/staged/customer/customer-collaborative-filtering-hbase-input/0/category-output/consolidated_ede"
+            },
+            {
+              "column_name": "1000",
+              "description": "Customer recent transactions",
+              "data_path": "/staged/customer/recent_transactions/consolidated_ede"
+            },
+            {
+              "column_name": "182",
+              "description": "Slot based customer variant",
+              "data_path": "/staged/clickstream/slotBasedRec/atgId/ede"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "table_name": "recommendations_customer_history",
+      "column_families": [
+        {
+          "family_name": "rec",
+          "columns": [
+            {
+              "column_name": "172",
+              "description": "CustomerHistory",
+              "data_path": "/staged/customer/customer_recommendation_clickstream_atg/atg_event_history/0/consolidated_ede/"
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "table_name": "recommendations_product",
+      "column_families": [
+        {
+          "family_name": "rec",
+          "columns": [
+            {
+              "column_name": "112",
+              "description": "View View",
+              "data_path": "/staged/clickstream/view-view/0/consolidated_ede"
+            },
+            {
+              "column_name": "160",
+              "description": "View View Tablet",
+              "data_path": "/staged/clickstream/view-view-tablet/0/consolidated_ede"
+            },
+            {
+              "column_name": "161",
+              "description": "View View Mobile",
+              "data_path": "/staged/clickstream/view-view-mobile/0/consolidated_ede"
+            },
+            {
+              "column_name": "163",
+              "description": "View View V2.0",
+              "data_path": "/staged/clickstream/view-view-2-0/0/consolidated_ede"
+            },
+            {
+              "column_name": "166",
+              "description": "View View V2.1(Tablet)",
+              "data_path": "/staged/clickstream/view-view-2-1/0/consolidated_ede"
+            },
+            {
+              "column_name": "167",
+              "description": "View View V2.2(Mobile)",
+              "data_path": "/staged/clickstream/view-view-2-2/0/consolidated_ede"
+            },
+            {
+              "column_name": "113",
+              "description": "View Bought",
+              "data_path": "/staged/clickstream/view-bought/0/consolidated_ede"
+            },
+            {
+              "column_name": "126",
+              "description": "Contextual Search",
+              "data_path": "/staged/contextual/contextual-hbase-input/0/consolidated_ede"
+            },
+            {
+              "column_name": "159",
+              "description": "Cart based recommendations",
+              "data_path": "/staged/cart_based/recs_consolidated_ede"
+            },
+            {
+              "column_name": "177",
+              "description": "Slot based product variant 1",
+              "data_path": "/staged/clickstream/slotBasedRec/productId/ede"
+            },
+            {
+              "column_name": "178",
+              "description": "Slot based product variant 2",
+              "data_path": "/staged/clickstream/slotBasedRec/productId1/ede"
+            },
+            {
+              "column_name": "187",
+              "description": "Slot based search variant",
+              "data_path": "/staged/clickstream/slotBasedRec/searchTerm/ede"
+            },
+            {
+              "column_name": "193",
+              "description": "ALS View View",
+              "data_path": "/staged/clickstream/view-view-3-0/consolidated_ede"
+            },
+            {
+              "column_name": "194",
+              "description": "Word2Vec View View",
+              "data_path": "/staged/clickstream/view-view-3-1/consolidated_ede"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
